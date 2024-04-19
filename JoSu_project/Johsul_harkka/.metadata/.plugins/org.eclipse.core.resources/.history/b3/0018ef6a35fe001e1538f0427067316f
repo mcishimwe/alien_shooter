@@ -1,0 +1,105 @@
+/*
+ * gamelogic.c
+ *
+ *  Created on: 11 Apr 2024
+ *      Author: mcish
+ */
+
+#include "gamelogic.h"
+
+extern uint8_t ship_x;
+
+void make_alien(uint8_t x,uint8_t y,uint8_t direction){
+	uint8_t i, j;
+
+	uint8_t alien_width = 1;
+	uint8_t alien_height = 1;
+
+	for(i=0; i<alien_width; i++){
+		for(j = 0; j<alien_height; j++){
+
+			SetPixel(x+i,y+j,255,0,0);
+		}
+	}
+
+	if(direction != 0){
+		uint8_t prev_x = x - direction;
+
+		if(prev_x >= 0 && prev_x < 8){
+			for(i=0; i<alien_width;i++){
+				for(j=0; j<alien_height;j++){
+					SetPixel(prev_x+i,y+j,228,155,15);
+				}
+			}
+		}
+	}
+}
+
+void activate_board(){
+	uint8_t i, j;
+
+	for(i=0; i<8; i++){
+		for(j=0;j<8;j++){
+			SetPixel(i,j,228,155,15);
+		}
+	}
+}
+
+void make_ship(uint8_t ship_x){
+	uint8_t i, j;
+
+	for(i=3; i<6; i++){
+		SetPixel(ship_x+i-3,7,0,0,255);
+	}
+
+	for(j=6; j<8; j++){
+		SetPixel(ship_x+1,j,0,0,255);
+	}
+}
+
+void move_ship(uint8_t ship_direction){
+
+
+	for(uint8_t i = 3; i<6;i++){
+		for(uint8_t j = 6; j<8;j++){
+			SetPixel(ship_x+i-3,j,228,155,15);
+		}
+	}
+
+	if(ship_x >=0 && ship_x <= 6){
+		ship_x += ship_direction;
+	}
+
+
+	make_ship(ship_x);
+
+
+
+
+
+}
+
+void shoot_bullet(){
+	uint8_t bullet_x = ship_x+1;
+	uint8_t bullet_y = 6;
+
+	while(bullet_y > 0) {
+	        for(uint8_t i = 0; i < 1; i++) {
+	            for(uint8_t j = 0; j < 1; j++) {
+	                SetPixel(bullet_x + i, bullet_y + j, 228,155,15); // Clear bullet pixels
+	            }
+	        }
+
+	        // Move the bullet upwards
+	        bullet_y -= 1;
+
+	        // Draw the bullet at the new position
+	        for(uint8_t i = 0; i < 1; i++) {
+	            for(uint8_t j = 0; j < 1; j++) {
+	                SetPixel(bullet_x + i, bullet_y + j, 0, 0, 0); // Draw bullet pixels
+	            }
+	        }
+
+
+	    }
+}

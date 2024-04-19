@@ -1,0 +1,2741 @@
+19:43:42 **** Clean-only build of configuration Debug for project Embedded_Exercise_normal ****
+make clean 
+rm -rf  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o  ./src/blinker.d  ./src/Interrupt_setup.d ./src/Pixel.d ./src/gamelogic.d ./src/main.d ./src/platform.d  ./logic.d  Embedded_Exercise_normal.elf.size  Embedded_Exercise_normal.elf
+' '
+19:43:42 **** Clean-only build of project Embedded_Exercise_bsp ****
+make -k clean 
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s clean 
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s clean 
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+19:43:45 **** Build of project Embedded_Exercise_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config' {aka 'struct <anonymous>'} [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:
+xscugic.h:218:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling sdps"
+xsdps.c: In function 'XSdPs_FrameCmd':
+xsdps.c:1189:11: warning: this statement may fall through [-Wimplicit-fallthrough=]
+    RetVal |= RESP_R1 | (u32)XSDPS_DAT_PRESENT_SEL_MASK;
+xsdps.c:1190:3: note: here
+   case ACMD41:
+   ^~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+19:45:20 **** Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/Interrupt_setup.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Interrupt_setup.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Interrupt_setup.d" -MT"src/Interrupt_setup.o" -o "src/Interrupt_setup.o" "../src/Interrupt_setup.c"
+../src/Interrupt_setup.c: In function 'SetupTimerInt1':
+../src/Interrupt_setup.c:103:6: warning: unused variable 'a' [-Wunused-variable]
+  int a=0;
+      ^
+../src/Interrupt_setup.c: In function 'SetupTimerInt':
+../src/Interrupt_setup.c:82:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/Interrupt_setup.c: In function 'SetupTimerInt1':
+../src/Interrupt_setup.c:122:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/Interrupt_setup.c: In function 'SetupGpioInterruptSystem':
+../src/Interrupt_setup.c:176:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/Interrupt_setup.c'
+' '
+'Building file: ../src/Pixel.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Pixel.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Pixel.d" -MT"src/Pixel.o" -o "src/Pixel.o" "../src/Pixel.c"
+../src/Pixel.c:16:20: warning: initialization of 'uint8_t *' {aka 'unsigned char *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+ uint8_t *channel = 0x41220000;
+                    ^~~~~~~~~~
+../src/Pixel.c:17:20: warning: initialization of 'uint8_t *' {aka 'unsigned char *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+ uint8_t *control = 0x41220008;
+                    ^~~~~~~~~~
+../src/Pixel.c: In function 'run':
+../src/Pixel.c:92:17: warning: statement with no effect [-Wunused-value]
+     current_led << 1;
+     ~~~~~~~~~~~~^~~~
+'Finished building: ../src/Pixel.c'
+' '
+'Building file: ../src/blinker.S'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/blinker.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/blinker.d" -MT"src/blinker.o" -o "src/blinker.o" "../src/blinker.S"
+'Finished building: ../src/blinker.S'
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+make: *** No rule to make target 'logic.o', needed by 'Embedded_Exercise_normal.elf'.  Stop.
+19:48:52 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../logic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"logic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"logic.d" -MT"logic.o" -o "logic.o" "../logic.c"
+In file included from ../logic.c:8:
+../logic.h:11:1: error: unknown type name 'class'
+ class logic {
+ ^~~~~
+../logic.h:11:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ class logic {
+             ^
+make: *** [subdir.mk:20: logic.o] Error 1
+19:49:27 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../logic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"logic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"logic.d" -MT"logic.o" -o "logic.o" "../logic.c"
+'Finished building: ../logic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34800	   2832	  22856	  60488	   ec48	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+19:49:43 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:13:48 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+../src/gamelogic.c:10:6: error: conflicting types for 'make_alien'
+ void make_alien(uint8_t x,uint8_t y,uint8_t r,uint8_t g,uint8_t b){
+      ^~~~~~~~~~
+In file included from ../src/gamelogic.c:8:
+../src/gamelogic.h:14:6: note: previous declaration of 'make_alien' was here
+ void make_alien(uint8_t x,uint8_t y,uint8_t direction);
+      ^~~~~~~~~~
+make: *** [src/subdir.mk:42: src/gamelogic.o] Error 1
+20:14:00 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+../src/gamelogic.c: In function 'make_alien':
+../src/gamelogic.c:11:15: error: 'r' undeclared (first use in this function)
+  SetPixel(x,y,r,g,b);
+               ^
+../src/gamelogic.c:11:15: note: each undeclared identifier is reported only once for each function it appears in
+../src/gamelogic.c:11:17: error: 'g' undeclared (first use in this function)
+  SetPixel(x,y,r,g,b);
+                 ^
+../src/gamelogic.c:11:19: error: 'b' undeclared (first use in this function)
+  SetPixel(x,y,r,g,b);
+                   ^
+make: *** [src/subdir.mk:42: src/gamelogic.o] Error 1
+20:14:28 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+../src/gamelogic.c: In function 'make_alien':
+../src/gamelogic.c:11:13: warning: unused variable 'j' [-Wunused-variable]
+  uint8_t i, j;
+             ^
+../src/gamelogic.c:11:10: warning: unused variable 'i' [-Wunused-variable]
+  uint8_t i, j;
+          ^
+'Finished building: ../src/gamelogic.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'TickHandler1':
+../src/main.c:207:2: error: too many arguments to function 'make_alien'
+  make_alien(alien_x,6,0,255,255);
+  ^~~~~~~~~~
+In file included from ../src/main.c:64:
+../src/gamelogic.h:14:6: note: declared here
+ void make_alien(uint8_t x,uint8_t y,uint8_t direction);
+      ^~~~~~~~~~
+make: *** [src/subdir.mk:42: src/main.o] Error 1
+20:19:59 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'TickHandler1':
+../src/main.c:207:2: error: too many arguments to function 'make_alien'
+  make_alien(alien_x,6,0,255,255);
+  ^~~~~~~~~~
+In file included from ../src/main.c:64:
+../src/gamelogic.h:14:6: note: declared here
+ void make_alien(uint8_t x,uint8_t y,uint8_t direction);
+      ^~~~~~~~~~
+make: *** [src/subdir.mk:42: src/main.o] Error 1
+20:22:50 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34968	   2832	  22856	  60656	   ecf0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+20:23:01 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:23:59 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34968	   2832	  22856	  60656	   ecf0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+20:24:07 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:24:27 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34968	   2832	  22856	  60656	   ecf0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+20:24:34 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:25:14 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34968	   2832	  22856	  60656	   ecf0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+20:25:21 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:29:02 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34976	   2832	  22856	  60664	   ecf8	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+20:29:10 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:34:23 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35040	   2832	  22856	  60728	   ed38	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+20:34:35 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:40:05 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35168	   2832	  22856	  60856	   edb8	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+20:40:26 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'TickHandler1':
+../src/main.c:190:2: warning: implicit declaration of function 'activate_board' [-Wimplicit-function-declaration]
+  activate_board();
+  ^~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35168	   2832	  22856	  60856	   edb8	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+20:40:38 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35168	   2832	  22856	  60856	   edb8	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+20:41:33 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35168	   2832	  22856	  60856	   edb8	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+20:41:42 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:43:52 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35168	   2832	  22856	  60856	   edb8	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+20:43:59 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:46:30 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35168	   2832	  22856	  60856	   edb8	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+20:46:37 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:47:44 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35168	   2832	  22856	  60856	   edb8	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+20:47:54 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:49:37 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35168	   2832	  22856	  60856	   edb8	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+20:52:49 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35296	   2832	  22856	  60984	   ee38	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+20:53:03 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35296	   2832	  22856	  60984	   ee38	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+20:53:09 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:54:41 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35296	   2832	  22856	  60984	   ee38	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+20:54:49 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:58:00 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35328	   2832	  22856	  61016	   ee58	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+20:58:06 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:58:53 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35328	   2832	  22856	  61016	   ee58	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+20:58:58 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:59:21 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35328	   2832	  22856	  61016	   ee58	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+20:59:30 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+22:52:50 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:00:51 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+01:34:26 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+02:58:35 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+../src/gamelogic.c: In function 'make_ship':
+../src/gamelogic.c:46:1: error: number of arguments doesn't match prototype
+ void make_ship(){
+ ^~~~
+In file included from ../src/gamelogic.c:8:
+../src/gamelogic.h:16:6: error: prototype declaration
+ void make_ship(uint8_t ship_x);
+      ^~~~~~~~~
+make: *** [src/subdir.mk:42: src/gamelogic.o] Error 1
+02:59:39 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'TickHandler1':
+../src/main.c:191:2: error: too few arguments to function 'make_ship'
+  make_ship();
+  ^~~~~~~~~
+In file included from ../src/main.c:64:
+../src/gamelogic.h:16:6: note: declared here
+ void make_ship(uint8_t ship_x);
+      ^~~~~~~~~
+make: *** [src/subdir.mk:42: src/main.o] Error 1
+02:59:59 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35368	   2832	  22856	  61056	   ee80	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+03:00:06 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+03:00:46 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35368	   2832	  22856	  61056	   ee80	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+03:01:09 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35368	   2832	  22856	  61056	   ee80	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+03:01:15 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+03:02:39 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35384	   2832	  22856	  61072	   ee90	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+03:28:55 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ButtonHandler':
+../src/main.c:230:3: warning: implicit declaration of function 'move_ship'; did you mean 'make_ship'? [-Wimplicit-function-declaration]
+   move_ship(1);
+   ^~~~~~~~~
+   make_ship
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/main.o: in function `ButtonHandler':
+C:\Users\mcish\Courses\Year2Courses\COMP.CE.100\JoSu_project\Johsul_harkka\Embedded_Exercise_normal\Debug/../src/main.c:230: undefined reference to `move_ship'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\mcish\Courses\Year2Courses\COMP.CE.100\JoSu_project\Johsul_harkka\Embedded_Exercise_normal\Debug/../src/main.c:235: undefined reference to `move_ship'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: Embedded_Exercise_normal.elf] Error 1
+03:29:11 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+../src/gamelogic.c: In function 'move_ship':
+../src/gamelogic.c:62:13: error: 'ship_x' undeclared (first use in this function)
+    SetPixel(ship_x+i-3,j,228,155,15);
+             ^~~~~~
+../src/gamelogic.c:62:13: note: each undeclared identifier is reported only once for each function it appears in
+../src/gamelogic.c:66:12: error: 'direction' undeclared (first use in this function); did you mean 'ship_direction'?
+  ship_x += direction;
+            ^~~~~~~~~
+            ship_direction
+make: *** [src/subdir.mk:42: src/gamelogic.o] Error 1
+03:30:21 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+../src/gamelogic.c: In function 'move_ship':
+../src/gamelogic.c:66:12: error: 'direction' undeclared (first use in this function); did you mean 'ship_direction'?
+  ship_x += direction;
+            ^~~~~~~~~
+            ship_direction
+../src/gamelogic.c:66:12: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:42: src/gamelogic.o] Error 1
+03:30:33 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35624	   2832	  22856	  61312	   ef80	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+03:30:47 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+../src/gamelogic.c: In function 'move_ship':
+../src/gamelogic.c:10:55: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void make_alien(uint8_t x,uint8_t y,uint8_t direction){
+                                                       ^
+../src/gamelogic.c:36:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void activate_board(){
+                      ^
+../src/gamelogic.c:46:31: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void make_ship(uint8_t ship_x){
+                               ^
+../src/gamelogic.c:58:54: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void move_ship(uint8_t ship_x,uint8_t ship_direction){
+                                                      ^
+../src/gamelogic.c:70: error: expected '{' at end of input
+make: *** [src/subdir.mk:42: src/gamelogic.o] Error 1
+03:30:58 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ButtonHandler':
+../src/main.c:230:3: error: too few arguments to function 'move_ship'
+   move_ship(1);
+   ^~~~~~~~~
+In file included from ../src/main.c:64:
+../src/gamelogic.h:17:6: note: declared here
+ void move_ship(uint8_t ship_x,uint8_t ship_direction);
+      ^~~~~~~~~
+../src/main.c:235:3: error: too few arguments to function 'move_ship'
+   move_ship(-1);
+   ^~~~~~~~~
+In file included from ../src/main.c:64:
+../src/gamelogic.h:17:6: note: declared here
+ void move_ship(uint8_t ship_x,uint8_t ship_direction);
+      ^~~~~~~~~
+make: *** [src/subdir.mk:42: src/main.o] Error 1
+03:31:41 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35664	   2832	  22856	  61352	   efa8	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+03:31:55 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+03:34:29 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+../src/gamelogic.c:58:6: error: conflicting types for 'move_ship'
+ void move_ship(uint8_t ship_x,uint8_t ship_direction){
+      ^~~~~~~~~
+In file included from ../src/gamelogic.c:8:
+../src/gamelogic.h:17:6: note: previous declaration of 'move_ship' was here
+ void move_ship(uint8_t ship_direction);
+      ^~~~~~~~~
+make: *** [src/subdir.mk:42: src/gamelogic.o] Error 1
+03:34:41 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+../src/gamelogic.c: In function 'move_ship':
+../src/gamelogic.c:62:13: error: 'ship_x' undeclared (first use in this function)
+    SetPixel(ship_x+i-3,j,228,155,15);
+             ^~~~~~
+../src/gamelogic.c:62:13: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:42: src/gamelogic.o] Error 1
+03:37:16 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ButtonHandler':
+../src/main.c:230:3: error: too many arguments to function 'move_ship'
+   move_ship(ship_x,1);
+   ^~~~~~~~~
+In file included from ../src/main.c:64:
+../src/gamelogic.h:17:6: note: declared here
+ void move_ship(uint8_t ship_direction);
+      ^~~~~~~~~
+../src/main.c:235:3: error: too many arguments to function 'move_ship'
+   move_ship(ship_x,-1);
+   ^~~~~~~~~
+In file included from ../src/main.c:64:
+../src/gamelogic.h:17:6: note: declared here
+ void move_ship(uint8_t ship_direction);
+      ^~~~~~~~~
+make: *** [src/subdir.mk:42: src/main.o] Error 1
+03:37:33 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35648	   2832	  22856	  61336	   ef98	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+03:37:41 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+03:43:53 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35760	   2832	  22856	  61448	   f008	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+03:44:23 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+03:45:37 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35704	   2832	  22856	  61392	   efd0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+03:45:52 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+03:46:39 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35760	   2832	  22856	  61448	   f008	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+03:47:12 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+03:47:55 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35760	   2832	  22856	  61448	   f008	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+03:48:02 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+03:48:40 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+03:50:37 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35744	   2832	  22856	  61432	   eff8	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+03:50:46 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+03:52:12 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35744	   2832	  22856	  61432	   eff8	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+03:52:20 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+03:53:03 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35744	   2832	  22856	  61432	   eff8	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+03:53:15 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+03:56:23 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35704	   2832	  22856	  61392	   efd0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+03:56:32 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+03:59:00 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35704	   2832	  22856	  61392	   efd0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+03:59:06 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+04:00:00 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35704	   2832	  22856	  61392	   efd0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+04:00:08 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+04:04:47 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35704	   2832	  22856	  61392	   efd0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+04:04:51 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35704	   2832	  22856	  61392	   efd0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+04:04:57 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+04:06:12 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35704	   2832	  22856	  61392	   efd0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+04:06:19 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+04:07:51 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35704	   2832	  22856	  61392	   efd0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+04:07:59 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+04:18:18 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+../src/gamelogic.c: In function 'make_ship':
+../src/gamelogic.c:58:3: error: too few arguments to function 'SetPixel'
+   SetPixel(ship_x+1,0,0,255);
+   ^~~~~~~~
+In file included from ../src/gamelogic.h:11,
+                 from ../src/gamelogic.c:8:
+../src/Pixel.h:23:6: note: declared here
+ void SetPixel(uint8_t x,uint8_t y, uint8_t r, uint8_t g, uint8_t b);
+      ^~~~~~~~
+make: *** [src/subdir.mk:42: src/gamelogic.o] Error 1
+04:18:45 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35728	   2832	  22856	  61416	   efe8	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+04:18:56 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35728	   2832	  22856	  61416	   efe8	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+04:19:51 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35704	   2832	  22856	  61392	   efd0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+04:19:56 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+04:20:52 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35752	   2832	  22856	  61440	   f000	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+04:20:58 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+04:21:41 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35752	   2832	  22856	  61440	   f000	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+04:21:48 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+04:22:15 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35704	   2832	  22856	  61392	   efd0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+04:22:25 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+04:23:24 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35736	   2832	  22856	  61424	   eff0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+04:23:37 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+04:24:11 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35736	   2832	  22856	  61424	   eff0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+04:24:23 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+04:24:59 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35736	   2832	  22856	  61424	   eff0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+04:25:06 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+04:29:26 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35736	   2832	  22856	  61424	   eff0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+04:29:35 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+04:30:39 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35704	   2832	  22856	  61392	   efd0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+04:30:46 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+04:32:07 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35704	   2832	  22856	  61392	   efd0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+04:32:17 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+04:37:40 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35704	   2832	  22856	  61392	   efd0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+11:33:19 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35704	   2832	  22856	  61392	   efd0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+11:36:17 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35832	   2832	  22856	  61520	   f050	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+11:37:10 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+../src/gamelogic.c: In function 'shoot_bullet':
+../src/gamelogic.c:78:1: error: number of arguments doesn't match prototype
+ void shoot_bullet(){
+ ^~~~
+In file included from ../src/gamelogic.c:8:
+../src/gamelogic.h:18:6: error: prototype declaration
+ void shoot_bullet(uint8_t ship_x);
+      ^~~~~~~~~~~~
+make: *** [src/subdir.mk:42: src/gamelogic.o] Error 1
+11:37:13 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35832	   2832	  22856	  61520	   f050	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+11:37:28 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35840	   2832	  22856	  61528	   f058	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+11:37:32 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:42:16 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36032	   2832	  22856	  61720	   f118	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+11:42:31 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:43:28 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36040	   2832	  22856	  61728	   f120	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+11:46:27 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36040	   2832	  22856	  61728	   f120	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+11:46:38 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:52:03 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'TickHandler1':
+../src/main.c:203:6: error: 'bullet_y' undeclared (first use in this function)
+  if (bullet_y > 0) {
+      ^~~~~~~~
+../src/main.c:203:6: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:205:19: error: 'bullet_x' undeclared (first use in this function); did you mean 'alien_x'?
+          SetPixel(bullet_x, bullet_y,228, 155, 15);
+                   ^~~~~~~~
+                   alien_x
+make: *** [src/subdir.mk:42: src/main.o] Error 1
+11:54:24 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:106:29: error: initializer element is not constant
+ volatile uint8_t bullet_x = ship_x;
+                             ^~~~~~
+make: *** [src/subdir.mk:42: src/main.o] Error 1
+11:54:33 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:106:29: error: initializer element is not constant
+ volatile uint8_t bullet_x = ship_x;
+                             ^~~~~~
+make: *** [src/subdir.mk:42: src/main.o] Error 1
+11:55:51 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35952	   2832	  22856	  61640	   f0c8	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+11:56:00 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:57:14 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36200	   2832	  22856	  61888	   f1c0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+11:57:18 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:41:52 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:43:24 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36200	   2832	  22856	  61888	   f1c0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+12:43:31 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:49:15 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36256	   2832	  22856	  61944	   f1f8	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+12:49:20 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:49:59 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36200	   2832	  22856	  61888	   f1c0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+12:50:16 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:53:14 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36256	   2832	  22856	  61944	   f1f8	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+13:00:00 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36168	   2832	  22856	  61856	   f1a0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+13:00:08 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:01:39 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36168	   2832	  22856	  61856	   f1a0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+13:01:46 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:09:54 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36192	   2832	  22856	  61880	   f1b8	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+13:10:02 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:11:03 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36168	   2832	  22856	  61856	   f1a0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+13:11:10 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:13:07 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/main.o: in function `ButtonHandler':
+C:\Users\mcish\Courses\Year2Courses\COMP.CE.100\JoSu_project\Johsul_harkka\Embedded_Exercise_normal\Debug/../src/main.c:243: undefined reference to `move_ship'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\mcish\Courses\Year2Courses\COMP.CE.100\JoSu_project\Johsul_harkka\Embedded_Exercise_normal\Debug/../src/main.c:248: undefined reference to `move_ship'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: Embedded_Exercise_normal.elf] Error 1
+13:13:25 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ButtonHandler':
+../src/main.c:243:3: warning: implicit declaration of function 'move_ship_right'; did you mean 'move_ship'? [-Wimplicit-function-declaration]
+   move_ship_right();
+   ^~~~~~~~~~~~~~~
+   move_ship
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/main.o: in function `ButtonHandler':
+C:\Users\mcish\Courses\Year2Courses\COMP.CE.100\JoSu_project\Johsul_harkka\Embedded_Exercise_normal\Debug/../src/main.c:248: undefined reference to `move_ship'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: Embedded_Exercise_normal.elf] Error 1
+13:13:59 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/main.o: in function `ButtonHandler':
+C:\Users\mcish\Courses\Year2Courses\COMP.CE.100\JoSu_project\Johsul_harkka\Embedded_Exercise_normal\Debug/../src/main.c:248: undefined reference to `move_ship'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: Embedded_Exercise_normal.elf] Error 1
+13:14:11 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ButtonHandler':
+../src/main.c:243:3: warning: implicit declaration of function 'move_ship_right'; did you mean 'move_ship'? [-Wimplicit-function-declaration]
+   move_ship_right();
+   ^~~~~~~~~~~~~~~
+   move_ship
+../src/main.c:248:3: warning: implicit declaration of function 'move_ship_left'; did you mean 'move_ship'? [-Wimplicit-function-declaration]
+   move_ship_left();
+   ^~~~~~~~~~~~~~
+   move_ship
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36336	   2832	  22856	  62024	   f248	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+13:14:48 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36336	   2832	  22856	  62024	   f248	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+13:15:02 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:16:30 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36384	   2832	  22856	  62072	   f278	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+13:16:35 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:17:21 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:18:26 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36424	   2832	  22856	  62112	   f2a0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+13:18:35 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:19:40 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36440	   2832	  22856	  62128	   f2b0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+13:19:45 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:24:25 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36440	   2832	  22856	  62128	   f2b0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+13:24:30 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:25:52 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36384	   2832	  22856	  62072	   f278	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+13:25:55 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:29:00 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36408	   2832	  22856	  62096	   f290	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+13:30:14 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:49:25 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/gamelogic.o: in function `shoot_bullet':
+C:\Users\mcish\Courses\Year2Courses\COMP.CE.100\JoSu_project\Johsul_harkka\Embedded_Exercise_normal\Debug/../src/gamelogic.c:115: undefined reference to `bullet_direction'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\mcish\Courses\Year2Courses\COMP.CE.100\JoSu_project\Johsul_harkka\Embedded_Exercise_normal\Debug/../src/gamelogic.c:115: undefined reference to `bullet_direction'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\mcish\Courses\Year2Courses\COMP.CE.100\JoSu_project\Johsul_harkka\Embedded_Exercise_normal\Debug/../src/gamelogic.c:116: undefined reference to `bullet_direction'
+c:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: C:\Users\mcish\Courses\Year2Courses\COMP.CE.100\JoSu_project\Johsul_harkka\Embedded_Exercise_normal\Debug/../src/gamelogic.c:116: undefined reference to `bullet_direction'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: Embedded_Exercise_normal.elf] Error 1
+13:52:19 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36448	   2832	  22856	  62136	   f2b8	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+13:52:56 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:53:51 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36456	   2832	  22856	  62144	   f2c0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+13:58:58 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36440	   2832	  22856	  62128	   f2b0	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+14:00:00 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:03:12 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:05:53 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36288	   2832	  22856	  61976	   f218	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+14:06:57 **** Auto Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/gamelogic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gamelogic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Embedded_Exercise_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gamelogic.d" -MT"src/gamelogic.o" -o "src/gamelogic.o" "../src/gamelogic.c"
+'Finished building: ../src/gamelogic.c'
+' '
+'Building target: Embedded_Exercise_normal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Embedded_Exercise_bsp/ps7_cortexa9_0/lib -o "Embedded_Exercise_normal.elf"  ./src/Interrupt_setup.o ./src/Pixel.o ./src/blinker.o ./src/gamelogic.o ./src/main.o ./src/platform.o  ./logic.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Embedded_Exercise_normal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Embedded_Exercise_normal.elf  |tee "Embedded_Exercise_normal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36288	   2832	  22856	  61976	   f218	Embedded_Exercise_normal.elf
+'Finished building: Embedded_Exercise_normal.elf.size'
+' '
+14:07:09 **** Incremental Build of configuration Debug for project Embedded_Exercise_normal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
