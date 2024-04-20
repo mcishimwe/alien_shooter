@@ -9,6 +9,7 @@
 
 extern uint8_t ship_x;
 extern uint8_t bullet_direction;
+extern uint8_t bullet_y;
 
 void make_alien(uint8_t x,uint8_t y,uint8_t direction){
 	uint8_t i, j;
@@ -19,7 +20,7 @@ void make_alien(uint8_t x,uint8_t y,uint8_t direction){
 	for(i=0; i<alien_width; i++){
 		for(j = 0; j<alien_height; j++){
 
-			SetPixel(x+i,y+j,255,0,0);
+			SetPixel(x+i,y+j,0,128,0);
 		}
 	}
 
@@ -50,10 +51,10 @@ void make_ship(uint8_t ship_x){
 	uint8_t i, j;
 
 	for(i=3; i<6; i++){
-		SetPixel(ship_x+i-3,7,0,0,255);
+		SetPixel(ship_x+i-3,6,0,0,255);
 	}
 
-	for(j=6; j<8; j++){
+	for(j=5; j<7; j++){
 		SetPixel(ship_x+1,j,0,0,255);
 	}
 }
@@ -99,28 +100,38 @@ void move_ship_left(){
 		make_ship(ship_x);
 }
 
-void shoot_bullet(){
-	uint8_t i, j;
+void make_bullet(uint8_t x,uint8_t y, uint8_t direction) {
+    uint8_t i,j;
 
-		uint8_t bullet_width = 1;
-		uint8_t bullet_height = 1;
+    uint8_t bullet_width = 1;
+    uint8_t bullet_height = 1;
 
-		for(i=0; i<bullet_width; i++){
-			for(j = 0; j<bullet_height; j++){
+    for(i=0;i<bullet_width;i++){
+    	for(j=0;j<bullet_height;j++){
+    		SetPixel(x+i,y+j,255,0,0);
+    	}
+    }
 
-				SetPixel(ship_x+i+1,6+j,0,255,0);
-			}
-		}
+    if(direction != 0){
+    	uint8_t prev_y = y - direction;
+    	if(prev_y >= 0 && prev_y < 8){
+    		for(i=0;i<bullet_width;i++){
+    			for(j=0;j<bullet_height;j++){
+    				SetPixel(prev_y+i,y+j,228,155,15);
+    			}
+    		}
+    	}
+    }
 
-		if(bullet_direction != 0){
-			uint8_t prev_y = 6 - bullet_direction;
+}
 
-			if(prev_y >= 0 && prev_y < 7){
-				for(i=0; i<bullet_width;i++){
-					for(j=0; j<bullet_height;j++){
-						SetPixel(ship_x+i,prev_y+j,228,155,15);
-					}
-				}
-			}
-		}
+void move_bullet() {
+    // Clear the previous position of the bullet
+    SetPixel(ship_x+1, bullet_y, 0, 0, 0);
+
+    // Move the bullet upwards (assuming the bullet moves upward)
+    bullet_y -= bullet_direction;
+
+    // Draw the bullet at the new position
+    SetPixel(ship_x+1, bullet_y, 0, 255, 0);
 }

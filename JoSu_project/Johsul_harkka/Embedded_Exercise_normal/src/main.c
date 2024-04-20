@@ -100,11 +100,15 @@ Brief description:
 
 volatile uint8_t chan = 0;
 volatile uint8_t alien_x = 0;
+volatile uint8_t alien_y = 0;
 volatile uint8_t alien_direction = 1;
 volatile uint8_t ship_x = 0;
 volatile uint8_t ship_direction = 0;
-volatile uint8_t bullet_y = 2;
+volatile uint8_t bullet_y;
+volatile uint8_t bullet_x;
 volatile uint8_t bullet_direction = 1;
+volatile uint8_t score=0;
+
 
 int main()
 {
@@ -192,9 +196,10 @@ void TickHandler1(void *CallBackRef){
 
 
 	activate_board();
-	make_ship(ship_x);
-	make_alien(alien_x,0,alien_direction);
 
+	make_ship(ship_x);
+
+	make_alien(alien_x,0,alien_direction);
 	alien_x+= alien_direction;
 
 	if(alien_x >= 8 || alien_x < 0){
@@ -205,6 +210,29 @@ void TickHandler1(void *CallBackRef){
 
 
 	make_alien(alien_x,0,alien_direction);
+
+
+
+	if(bullet_y<8 && bullet_y>=0){
+		bullet_y -= bullet_direction;
+		make_bullet(bullet_x,bullet_y,bullet_direction);
+	}
+
+
+	if(bullet_x == alien_x && bullet_y == alien_y){
+		score++;
+		SetPixel(score,7,189,240,164);
+	}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -226,7 +254,11 @@ void ButtonHandler(void *CallBackRef, u32 Bank, u32 Status){
 
 	//If true, btn0 was used to trigger interrupt
 	if(Status==0x01){
-		shoot_bullet();
+		bullet_x = ship_x +1;
+		bullet_y = 7;
+
+		//make_bullet(bullet_x,bullet_y,bullet_direction);
+
 
 	}
 
