@@ -41,7 +41,7 @@ void activate_board(){
 	uint8_t i, j;
 
 	for(i=0; i<8; i++){
-		for(j=0;j<8;j++){
+		for(j=0;j<7;j++){
 			SetPixel(i,j,228,155,15);
 		}
 	}
@@ -63,7 +63,7 @@ void move_ship_right(){
 
 
 	for(uint8_t i = 3; i<6;i++){
-		for(uint8_t j = 6; j<8;j++){
+		for(uint8_t j = 5; j<7;j++){
 			SetPixel(ship_x+i-3,j,228,155,15);
 		}
 	}
@@ -86,7 +86,7 @@ void move_ship_right(){
 
 void move_ship_left(){
 	for(uint8_t i = 3; i<6;i++){
-			for(uint8_t j = 6; j<8;j++){
+			for(uint8_t j = 5; j<7;j++){
 				SetPixel(ship_x+i-3,j,228,155,15);
 			}
 		}
@@ -125,13 +125,45 @@ void make_bullet(uint8_t x,uint8_t y, uint8_t direction) {
 
 }
 
-void move_bullet() {
-    // Clear the previous position of the bullet
-    SetPixel(ship_x+1, bullet_y, 0, 0, 0);
+void display_score(uint8_t score) {
+	for (uint8_t i = 0; i <= score-1; i++) {
+	        SetPixel(i, 7, 0, 0, 0);  // Clear the pixel at position (i, 7)
+	    }
 
-    // Move the bullet upwards (assuming the bullet moves upward)
-    bullet_y -= bullet_direction;
+	    // Draw the updated score
+	  for (uint8_t i = 0; i <= score-1; i++) {
+		  SetPixel(i, 7, 255, 255, 255);  // Draw the pixel at position (i, 7)
+	    }
+}
 
-    // Draw the bullet at the new position
-    SetPixel(ship_x+1, bullet_y, 0, 255, 0);
+void display_victory(){
+
+
+	uint8_t smiley[8][8]={
+			{0, 0, 1, 1, 1, 1, 0, 0},
+			{0, 1, 0, 0, 0, 0, 1, 0},
+			{1, 0, 1, 0, 1, 0, 0, 1},
+			{1, 0, 0, 0, 0, 1, 0, 1},
+			{1, 0, 0, 0, 0, 1, 0, 1},
+			{1, 0, 1, 0, 1, 0, 0, 1},
+			{0, 1, 0, 0, 0, 0, 1, 0},
+			{0, 0, 1, 1, 1, 1, 0, 0}
+	};
+
+	for(uint8_t i=0; i<8;i++){
+		for(uint8_t j=0;j<8;j++){
+			if(smiley[i][j] == 1){
+				SetPixel(i,j,255,255,0);
+			}
+			else if(smiley[i][j] == 0){
+				SetPixel(i,j,0,0,0);
+			}
+		}
+	}
+}
+
+void reset_scoreboard(){
+	for(uint8_t i = 0; i<8;i++){
+		SetPixel(i,7,0,0,0);
+	}
 }
